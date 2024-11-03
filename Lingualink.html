@@ -1,0 +1,275 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <title>Catering Services</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+      <style>
+          body {
+              font-family: 'Playfair Display', serif;
+              line-height: 1.6;
+              background-color: #f9f9f9;
+              margin: 0;
+              padding: 0;
+          }
+          header {
+            background: #d2691e;
+            color: #fff;
+            padding: 1rem;
+            text-align: left;
+          }
+          .container {
+              max-width: 1000px;
+              margin: auto;
+              padding: 1rem;
+          }
+          .gallery {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: center;
+              gap: 1rem;
+          }
+          .services {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 1rem;
+          }
+          .service {
+              flex: 1;
+              padding: 1rem;
+              border: 1px solid #ccc;
+              background-color: #fff;
+          }
+          footer {
+              background: #333;
+              color: #fff;
+              text-align: center;
+              padding: 1rem;
+              margin-top: 2rem;
+          }
+          form {
+              background-color: #fff;
+              padding: 1rem;
+              border: 1px solid #ccc;
+              margin-top: 2rem;
+          }
+          label {
+              display: block;
+              margin-bottom: 0.5rem;
+          }
+          input, textarea {
+              width: 100%;
+              padding: 0.5rem;
+              margin-bottom: 1rem;
+          }
+          button {
+              padding: 0.75rem;
+              background: #333;
+              color: #fff;
+              border: none;
+              cursor: pointer;
+          }
+          button:hover {
+              background: #555;
+          }
+      </style>
+  </head>
+  <body>
+      <button id="languageToggle" style="position: absolute; top: 10px; left: 10px; padding: 0.5rem; background: #333; color: #fff; border: none; cursor: pointer;" data-en="Swedish/English" data-sv="English/Swedish">Swedish/English</button>
+      <header>
+          <img src="logo.png" alt="Catering Services Logo" style="width: 25%; height: auto; float: right; margin-left: 20px;">
+          <h1 data-en="Experience the Art of Catering with Taste by Laleh" data-sv="Upplev Cateringkonst med Taste by Laleh">Experience the Art of Catering with Taste by Laleh</h1>
+          <p data-en="Your partner in unforgettable culinary experiences and professional event catering" data-sv="Din partner för oförglömliga kulinariska upplevelser och professionell eventcatering">Your partner in unforgettable culinary experiences and professional event catering</p>
+      </header>
+  
+      <div class="container">
+          <section>
+              <h2 data-en="About Us" data-sv="Om oss">About Us</h2>
+              <p data-en="We provide a wide range of catering services to make your events memorable. Our expert chef and dedicated staff are committed to delivering exceptional culinary experiences tailored to your needs, whether for weddings, corporate events, or private parties." data-sv="Vi erbjuder ett brett utbud av cateringstjänster för att göra dina evenemang minnesvärda. Vår expertkock och dedikerade personal är engagerade i att leverera exceptionella kulinariska upplevelser anpassade till dina behov, oavsett om det är bröllop, företagsevenemang eller privata fester.">We provide a wide range of catering services to make your events memorable. Our expert chef and dedicated staff are committed to delivering exceptional culinary experiences tailored to your needs, whether for weddings, corporate events, or private parties.</p>
+          </section>
+  
+          <section class="gallery-section">
+              <h2 data-en="Gallery" data-sv="Galleri">Gallery</h2>
+              <p data-en="Take a look at some of our culinary masterpieces. We pride ourselves on presentation as well as taste." data-sv="Ta en titt på några av våra kulinariska mästerverk. Vi är stolta över både presentation och smak.">Take a look at some of our culinary masterpieces. We pride ourselves on presentation as well as taste.</p>
+              <div class="gallery distinct-unit">
+                  <img src="images/sample1.jpg" alt="Culinary Masterpiece 1" style="width: 45%; height: auto; margin: 10px;">
+                  <img src="images/sample2.jpg" alt="Culinary Masterpiece 2" style="width: 45%; height: auto; margin: 10px;">
+                  
+              </div>
+              
+          </section>
+  
+          <section class="services">
+              <div class="service">
+                  <h3 data-en="Wedding Catering" data-sv="Bröllopscatering">Wedding Catering</h3>
+                  <p data-en="Make your special day even more magical with our bespoke wedding catering services. We offer a range of menu options to suit your preferences and create a memorable culinary experience for you and your guests." data-sv="Gör din speciella dag ännu mer magisk med våra skräddarsydda bröllopscateringstjänster. Vi erbjuder en mängd olika menyer för att passa dina önskemål och skapa en minnesvärd kulinarisk upplevelse för dig och dina gäster.">Make your special day even more magical with our bespoke wedding catering services. We offer a range of menu options to suit your preferences and create a memorable culinary experience for you and your guests.</p>
+              </div>
+              <div class="service">
+                  <h3 data-en="Corporate Events" data-sv="Företagsevenemang">Corporate Events</h3>
+                  <p data-en="Impress your clients and colleagues with our professional corporate catering services. We provide tailored menus and impeccable service to ensure your event runs smoothly and leaves a lasting impression." data-sv="Imponera på dina kunder och kollegor med våra professionella företagscateringstjänster. Vi erbjuder skräddarsydda menyer och felfri service för att säkerställa att ditt evenemang löper smidigt och lämnar ett bestående intryck.">Impress your clients and colleagues with our professional corporate catering services. We provide tailored menus and impeccable service to ensure your event runs smoothly and leaves a lasting impression.</p>
+              </div>
+              <div class="service">
+                  <h3 data-en="Private Parties" data-sv="Privata Fester">Private Parties</h3>
+                  <p data-en="Whether it's a birthday, anniversary, or any other celebration, our private party catering services are designed to delight your guests with exquisite food and exceptional service, making your event truly unforgettable." data-sv="Oavsett om det är en födelsedag, ett jubileum eller någon annan festlighet, är våra cateringstjänster för privata fester utformade för att glädja dina gäster med utsökt mat och exceptionell service, vilket gör ditt evenemang oförglömligt.">Whether it's a birthday, anniversary, or any other celebration, our private party catering services are designed to delight your guests with exquisite food and exceptional service, making your event truly unforgettable.</p>
+              </div>
+          </section>
+  
+          <section>
+              <h2 data-en="Contact Us" data-sv="Kontakta oss">Contact Us</h2>
+              <p data-en="If you are interested in our catering services or have any questions, please feel free to get in touch using the form below. Let us help you plan an amazing event with delicious food and flawless service." data-sv="Om du är intresserad av våra cateringstjänster eller har några frågor, tveka inte att kontakta oss via formuläret nedan. Låt oss hjälpa dig att planera ett fantastiskt evenemang med utsökt mat och felfri service.">If you are interested in our catering services or have any questions, please feel free to get in touch using the form below. Let us help you plan an amazing event with delicious food and flawless service.</p>
+              <form action="#">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required>
+  
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+  
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" rows="4" required></textarea>
+  
+                  <button type="submit">Send Message</button>
+              </form>
+          </section>
+      </div>
+  
+      <footer>
+          <p><p data-en="&copy; 2024 Catering Services. All rights reserved." data-sv="&copy; 2024 Catering Services. Alla rättigheter förbehållna.">&copy; 2024 Catering Services. All rights reserved.</p></p>
+              <p>Follow us on Instagram: <a href="https://www.instagram.com/your_catering_handle" target="_blank">@your_catering_handle</a></p>
+          <p>Call us at: <a href="tel:+1234567890">+1 234 567 890</a></p>
+              <p>Follow us on Instagram: <a href="https://www.instagram.com/your_catering_handle" target="_blank">@your_catering_handle</a></p>
+          <p>Call us at: <a href="tel:+1234567890">+1 234 567 890</a></p>
+          <div style="margin-top: 20px;">
+              <p>Scan the QR code to follow us on Instagram:</p>
+              <img src="images/instagram_qr.png" alt="Instagram QR Code" style="width: 150px; height: auto;">
+          </div>
+      </footer>
+      <script>
+          // Visitor statistics counter
+          if (localStorage.page_view_count) {
+              localStorage.page_view_count = Number(localStorage.page_view_count) + 1;
+          } else {
+              localStorage.page_view_count = 1;
+          }
+          document.addEventListener('DOMContentLoaded', (event) => {
+              const footer = document.querySelector('footer');
+              const statsParagraph = document.createElement('p');
+              statsParagraph.textContent = `Page Visitors: ${localStorage.page_view_count}`;
+              footer.appendChild(statsParagraph);
+          });
+      </script>
+      <script>
+          // Visitor statistics counter with more details
+          if (localStorage.page_view_count) {
+              localStorage.page_view_count = Number(localStorage.page_view_count) + 1;
+          } else {
+              localStorage.page_view_count = 1;
+          }
+  
+          // Collecting more visitor details (date and time of visit)
+          let visits = JSON.parse(localStorage.getItem('detailed_visits')) || [];
+          const visitDetails = {
+              visitNumber: localStorage.page_view_count,
+              date: new Date().toLocaleDateString(),
+              time: new Date().toLocaleTimeString()
+          };
+          visits.push(visitDetails);
+          localStorage.setItem('detailed_visits', JSON.stringify(visits));
+  
+          document.addEventListener('DOMContentLoaded', (event) => {
+              const footer = document.querySelector('footer');
+              const statsParagraph = document.createElement('p');
+              statsParagraph.textContent = `Page Visitors: ${localStorage.page_view_count}`;
+              footer.appendChild(statsParagraph);
+  
+              // Adding detailed visitor log
+              const detailsTitle = document.createElement('h4');
+              detailsTitle.textContent = 'Detailed Visitor Log:';
+              footer.appendChild(detailsTitle);
+  
+              const visitList = document.createElement('ul');
+              visits.forEach(visit => {
+                  const listItem = document.createElement('li');
+                  listItem.textContent = `Visit #${visit.visitNumber}: Date - ${visit.date}, Time - ${visit.time}`;
+                  visitList.appendChild(listItem);
+              });
+              footer.appendChild(visitList);
+          });
+      </script>
+      <script>
+          // Visitor statistics counter
+          if (localStorage.page_view_count) {
+              localStorage.page_view_count = Number(localStorage.page_view_count) + 1;
+          } else {
+              localStorage.page_view_count = 1;
+          }
+          document.addEventListener('DOMContentLoaded', (event) => {
+              const footer = document.querySelector('footer');
+              const statsParagraph = document.createElement('p');
+              statsParagraph.textContent = `Page Visitors: ${localStorage.page_view_count}`;
+              footer.appendChild(statsParagraph);
+          });
+      </script>
+      <script>
+          // Visitor statistics counter with more details
+          if (localStorage.page_view_count) {
+              localStorage.page_view_count = Number(localStorage.page_view_count) + 1;
+          } else {
+              localStorage.page_view_count = 1;
+          }
+  
+          // Collecting more visitor details (date and time of visit)
+          let visits = JSON.parse(localStorage.getItem('detailed_visits')) || [];
+          const visitDetails = {
+              visitNumber: localStorage.page_view_count,
+              date: new Date().toLocaleDateString(),
+              time: new Date().toLocaleTimeString()
+          };
+          visits.push(visitDetails);
+          localStorage.setItem('detailed_visits', JSON.stringify(visits));
+  
+          document.addEventListener('DOMContentLoaded', (event) => {
+              const footer = document.querySelector('footer');
+              const statsParagraph = document.createElement('p');
+              statsParagraph.textContent = `Page Visitors: ${localStorage.page_view_count}`;
+              footer.appendChild(statsParagraph);
+  
+              // Adding detailed visitor log
+              const detailsTitle = document.createElement('h4');
+              detailsTitle.textContent = 'Detailed Visitor Log:';
+              footer.appendChild(detailsTitle);
+  
+              const visitList = document.createElement('ul');
+              visits.forEach(visit => {
+                  const listItem = document.createElement('li');
+                  listItem.textContent = `Visit #${visit.visitNumber}: Date - ${visit.date}, Time - ${visit.time}`;
+                  visitList.appendChild(listItem);
+              });
+              footer.appendChild(visitList);
+          });
+      </script>
+      
+      <script>
+        // Language toggle functionality
+        document.getElementById('languageToggle').addEventListener('click', function() {
+            const elements = document.querySelectorAll('[data-en], [data-sv]');
+            elements.forEach(element => {
+                if (element.dataset.en && element.dataset.sv) {
+                    if (element.textContent.trim() === element.dataset.en) {
+                        element.textContent = element.dataset.sv;
+                    } else {
+                        element.textContent = element.dataset.en;
+                    }
+                }
+            });
+            // Toggle the button text
+            const button = document.getElementById('languageToggle');
+            if (button.textContent.trim() === 'Swedish/English') {
+                button.textContent = 'English/Swedish';
+            } else {
+                button.textContent = 'Swedish/English';
+            }
+        });
+    </script>
+  </body>
+  </html>
